@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+    <link type="text/css" rel="stylesheet" href="stylesheet.css">
+    <button type="submit" onclick="colorChange()">Click Me!</button>
+    <div>
+      <h2>This is colour change project.</h2>
+
+    </div>
+  </head>
+  <body id="main">
+  <script>
+    var color=["black","green","yellow","orange","red","brown"];
+    var i=0;
+  function colorChange(){
+      i = parseInt(Math.random()*color.length);
+      document.getElementById("main").style.background=color[i];
+    };
+    
+  </script>
+  
+  </body>
+  </html> 
